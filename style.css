@@ -1,0 +1,110 @@
+/* 🌈 Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* 🧱 Main Container */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 420px;
+  transition: all 0.3s ease;
+}
+
+/* 🏷️ Headings & Text */
+h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+#quote {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+#author {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* 🎨 Button Styling */
+button {
+  background: #66a6ff;
+  border: none;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #89f7fe;
+  color: #333;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .container {
+    padding: 1.5rem;
+    width: 100%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  #quote {
+    font-size: 1rem;
+  }
+
+  #author {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* 💻 Larger Screens */
+@media (min-width: 900px) {
+  .container {
+    max-width: 500px;
+  }
+
+  #quote {
+    font-size: 1.3rem;
+  }
+
+  #author {
+    font-size: 1.1rem;
+  }
+}
